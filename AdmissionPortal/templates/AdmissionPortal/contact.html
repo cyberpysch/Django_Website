@@ -1,0 +1,129 @@
+{% extends "home/base.html" %}
+{%block title%}Contact Us{%endblock title%}
+{%block navbar%}
+<!--navbar-->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Universities
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" target="_blank" href="https://www.iima.ac.in/">IIM A</a></li>
+    <li>
+      <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" target="_blank" href="https://www.iitb.ac.in/">IIT Bombay</a>
+    </li>
+  </ul>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/AdmissionPortal/services">Our Services
+  </a>
+</li>
+{%endblock navbar%}
+
+
+{% block body %}
+
+<div id="carouselExample" class="carousel slide bg-img" style="margin-bottom: 10px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/2000x1500/?contact,phone" class="d-block w-100" height="400" breadth="1400"
+        alt="...">
+    </div>
+    <div class="carousel-caption d-none d-md-block" style="color: maroon; text-shadow: 1px 1px 2px black ;">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+</div>
+
+
+<!--enquiry form-->
+<div class='container my-100'id='contact' style="margin-top: 20px;">
+  <form class='row g-3'style="margin-top: 12px;" action='/AdmissionPortal/contact/' method='post'>
+    {% csrf_token %}
+    <div class="col-md-7" >
+      <label for="name" class="form-label">Name</label>
+      <input type="name" class="form-control" name='name' id="name" placeholder="Your name">
+    </div>
+    <div class="col-md-5">
+      <label for="phone" class="form-label">Contact</label>
+      <input type="phone" class="form-control" name='phone' id="phone" aria-describedby="phoneHelp">
+      <div id="phoneHelp" class="form-text">We'll never share your contact number with anyone else.</div>
+    </div>
+    <div class="col-md-8">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" name='email' id="email" placeholder='john@example.com'
+        aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="col-md-4">
+      <label for="For_choice" class="form-label">For</label>
+      <select name="For_choice" id="For_choice" class="form-select">
+        <option selected>Counselling</option>
+        <option>Admission Enquiry</option>
+      </select>
+    </div>
+    <div class="col-md-5">
+      <label for="course" class="form-label">Course</label>
+      <input type="course" class="form-control" name='course' id="course" placeholder="BCA">
+    </div>
+    <div class="col-md-7">
+      <label for="university" class="form-label">University</label>
+      <input type="university" class="form-control" name='university' id="university" placeholder="DTU">
+    </div>
+    <div class="col-md-12">
+      <label for="address" class="form-label">Address</label>
+      <input type="address" class="form-control" name='address' id="address" placeholder="1st street maharani bagh">
+    </div>
+    <div class="col-md-4">
+      <label for="city" class="form-label">City</label>
+      <input type="city" class="form-control" name='city' id="city">
+    </div>
+    <div class="col-md-4">
+      <label for="state" class="form-label">State</label>
+      <select name="state" id="state" class="form-select">
+        <option>Abroad</option>
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chattisgarh</option>
+        <option selected>Delhi NCR</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu and Kashmir</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttarakhand</option>
+        <option>Uttar Pradesh</option>
+        <option>West Bengal</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="zip" class="form-label">Zip Code</label>
+      <input type="zip" class="form-control" name='zip' id="zip">
+    </div>
+
+    <input class="btn btn-dark btn-lg " type="submit" value="Submit" style="margin-bottom: 0.25px;">
+  </form>
+</div>
+
+
+{%endblock body%}

@@ -1,0 +1,158 @@
+{% extends "home/base.html" %}
+{%block title%}Our Services{%endblock title%}
+
+
+{%block navbar%}
+<!--navbar-->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Universities
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" target="_blank" href="https://www.iima.ac.in/">IIM A</a></li>
+    <li>
+      <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" target="_blank" href="https://www.iitb.ac.in/">IIT Bombay</a>
+    </li>
+  </ul>
+</li>
+
+<li class="nav-item {%block active%}active{%endblock active%}">
+  <a class="nav-link" href="/AdmissionPortal/services">Our Services
+  </a>
+</li>
+{%endblock navbar%}
+
+{% block body %}
+
+<!--image-->
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/2000x1500/?University,Building" class="d-block w-100" height="1200"
+        breadth="1400" alt="img Error...">
+    </div>
+
+
+    <!-- Servicies cards-->
+    <div class="container my-5">
+      <div class="container text-center">
+        <div class="row row-cols-3 ">
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,water" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Distance Learning University for UG and PG Program</h5>
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,school" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Flexi Tech Education / Online Education</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,board" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PHD Reasearch Based Program</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,ground" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Online Personal Tuition Coaching and Classes</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,child" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Open Boards</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,professor" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Job Ready Programme / Skill Based Program</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,teacher" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Study Abroad</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Online Training IELTS Prepration</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cntainer">
+              <div class="card" style="max-width: 25rem;">
+                <img src="https://source.unsplash.com/400x200/?college,students,class" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Career Consulting</h5>
+
+                  <a href="/AdmissionPortal/contact" class="btn btn-outline-primary">Enquiry Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  {%endblock body%}

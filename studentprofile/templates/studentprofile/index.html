@@ -1,0 +1,64 @@
+{% extends "home/base.html" %}
+{% block title %}studentprofile{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <div class="container">
+        <h1 style="text-align: center;color: maroon; text-shadow: 1px 1px 2px;">Progress Status</h1>
+    </div>
+</div>
+
+<div class="container">
+   {% if request.user.is_authenticated %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" colspan="2"></th>
+                <th scope="col" colspan="2">Steps</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Registration</td>
+                <td>{{allProfile.stage1}}</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Stage 1</td>
+                <td >{{allProfile.stage1}}</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Stage 2</td>
+                <td>twitter</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Stage 3</td>
+                <td>twitter</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Stage 4</td>
+                <td>twitter</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">*</th>
+                <td colspan="2">Admission</td>
+                <td>twitter</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endif %}
+
+
+
+
+
+
+{% endblock body %}
